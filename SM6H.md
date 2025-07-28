@@ -33,5 +33,7 @@ Thank you for this keen observation, and it is indeed the case that with enough 
 It is possible that we can exploit the architectural advantage of a neural score estimator by first pre-training a NN score estimator such that the distance between NN and OISM score estimate is minimized. We are currently looking into this renewed outlook in training DMs. 
 
 [1] Chewi S, Le Gouic T, Lu C, Maunu T, Rigollet P. SVGD as a kernelized Wasserstein gradient flow of the chi-squared divergence. In: Advances in Neural Information Processing Systems. Curran Associates, Inc.; 2020. p. 2098–109.
+
 [2] Cai D, Modi C, Margossian CC, Gower RM, Blei DM, Saul LK. EigenVI: score-based variational inference with orthogonal function expansions. Advances in Neural Information Processing Systems. 2024 Dec 16;37:132691–721.
+
 [3] Benton J, Shi Y, De Bortoli V, Deligiannidis G, Doucet A. From denoising diffusions to denoising Markov models. Journal of the Royal Statistical Society Series B: Statistical Methodology. 2024 Apr 1;86(2):286–301.
