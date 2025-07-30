@@ -2,7 +2,11 @@
 
 >It would be intriguing to present some theoretical convergence results for applying the proposed OISM method to generative models and compare it with standard score matching, which could provide further understanding on the efficiency of simultaneously estimating the scores of all marginal distributions.
 
+_ZS_: What should we say about convergence? I don't have a concrete line of thought on what to do precisely on proving convergence, even though it seems plausible.
 
+One way of addressing this would be to point at the "OISM I" section of Figure 1. As we use an increasing number of eigenfunctions, the OISM score estimate approaches the ground truth score functions (the "ground truth score" in Figure 1 is not precisely accurate, as it has infinite support, but in principle it should have finite support on the interval; if we use Jacobi's theta function to calculate the score function, it bends towards the boundary in the exact same way as the OISM score function). 
+
+We could point out the slight inaccuracy in Figure 1 and suggest that the OISM score estimator seems to converge when given accurate expectations, and the scenario of empirically assessed expectations requires further study. 
 
  >The dimensions of the current experiments are not large. It would be beneficial to test the effectiveness of spectral decomposition on higher dimensional problems like higher-resolution image generation.
 
