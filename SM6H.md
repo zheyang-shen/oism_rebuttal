@@ -10,7 +10,11 @@ We could point out the slight inaccuracy in Figure 1 and suggest that the OISM s
 
  >The dimensions of the current experiments are not large. It would be beneficial to test the effectiveness of spectral decomposition on higher dimensional problems like higher-resolution image generation.
 
+Thank you for pointing out this issue, and the current version of this paper indeed does not contain a study of higher-dimensional problems. We have not thoroughly investigated this problem due to the constraint by time and page length, and that the high-dimensional application of our method is rudimentary: our method helps provide a nontrivial guess of the score function to accelerate the training of diffusion models, but neural score estimators are required to do the heavy lifting in generating plausible images. The added computational expense of our method scales linearly with dimensionality, and therefore does not significantly slow down the training process. We think that the training of diffusion models for the generation of very high-resolution images, which often includes extensive steps of super-resolution, is beyond the scope of our current work as the models contain many extraneous components unrelated to the inversion of the forward process. 
 
+We further conducted same experiments on ImageNet, and the results are shown below. 
+
+_ZS_: ImageNet results and some remarks on the dimensionality. 
 
 >In line 212, are there any other tractable stochastic processes like OU and BM process that the corresponding score matching estimator can be learned without requiring the forward process to be simulated? If yes, then new Markov processes may be utilized for score-based sampling tasks like particle-based variational inference, and OISM could be applied for score estimation.
 
