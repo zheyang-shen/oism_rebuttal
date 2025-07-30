@@ -18,7 +18,7 @@ Your insight about the exponentially increasing number of eigenfunctions is corr
 
 A notable direction for future work would be to alleviate the burden of enumerating eigenfunctions by choosing them in a data-adaptive manner. We think this is outside the scope of this paper due to our primary focus on solving OISM with the standard enumeration of eigenfunctions. 
 
-_ZS:_ I think our current understanding is insufficient to suggest whether or not a PCA solution is superior beyond the computational aspect. I still think warm start is a good idea but I'm not sure how to include it in the answer to this question. $${\color{red}\text{MR. Would this work?}}$$ On the other hand, the available setting easily allows to warm-start the DDPM neural score estimator, by pre-training it to learn the OISM eigenfunctions-based estimator. We believe this is also a direction worth exploring, by implementing the practical precautions in [3]
+_ZS:_ I think our current understanding is insufficient to suggest whether or not a PCA solution is superior beyond the computational aspect. I still think warm start is a good idea but I'm not sure how to include it in the answer to this question. $${\color{red}\text{MR. Would this work?}}$$ On the other hand, the available setting easily allows to warm-start the DDPM neural score estimator, by pre-training it to learn the OISM eigenfunctions-based estimator. We believe this is also a direction worth exploring, by implementing the practical recommendations in [3]
 
 >Considering the above weaknesses 1 and 2, the benefit of reformulating the ISM loss in Eq. (9) might remain unclear. Providing more detailed future directions and potentials of the proposed viewpoint would further enhance the significance of the paper.
 
