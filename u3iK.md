@@ -9,8 +9,6 @@ Thank you for this comment, and we address the concern from 2 standpoints.
 which is formulated as a special case of the ISM objective in Eq. (9). Instead of formulating $\mathbf{s}$ using eigenfunctions, it was parametrized with a neural network and auto-differentiation was used to handle the calculation of $\langle \nabla, \mathbf{s}\rangle$. While ISM is more computationally expensive compared to denoising score matching (DSM), it remains an open question whether diffusion models can be better trained using ISM as its objective function. Moreover, our operator-centric form of ISM in Eq. (10) is more general. It is not difficult to see that while standard diffusion modelling literature does not make use of the semigroup operator $P_t$ to describe the score matching objective, it does so implicitly. Namely, $\mathbb{E}_{\rho_t} \left[\left\Vert \mathbf{s}_t\right\Vert^2 + 2\langle \nabla, \mathbf{s}_t\rangle\right] = \mathbb{E}_{\rho_0}P_t\left(\left\Vert \mathbf{s}_t\right\Vert^2 + 2\langle \nabla, \mathbf{s}_t\rangle\right).$ We can see that while the left- and right-hand side of the above equation is equivalent, the l.h.s. suggests that this quantity can _only_ be evaluated by taking samples from the perturbed distribution $\rho_t$, and r.h.s. can be evaluated as long as $P_t$ is computable, which does not necessarily rely on Monte Carlo samples from $\rho_t$. For example, $P_t$ can be expressed as an integral operator for many diffusion processes, and calculating the integral operator needs not rely on samples from $\rho_t$. 
 It is from the above 2 perspectives that we think our formulation simultaneously informs the most popular choices for diffusion modeling, and our viewpoint of considering Markov operators has benefits that transcends the concern for tractability, as given by OU and BM processes. 
 
-[1] Zhou M, Chen T, Wang Z, Zheng H. Beta Diffusion. Advances in Neural Information Processing Systems. 2023 Dec 15;36:30070–95.
-
 >If my understanding is correct, the number of eigenfunctions exponentially increases when the proposed algorithm is applied to high-dimensional data, which could present a significant bottleneck. This would make solving the optimization problem in Eq. (11) computationally expensive and hinder the use of higher-order approximations.
 
 Your insight about the exponentially increasing number of eigenfunctions is correct, and it is indeed a bottleneck if we choose to only utilize eigenfunctions to characterize an intractable distribution. We intend to convey 2 messages via our experiments. (i) When a sufficient number of eigenfunctions can be properly enumerated, they alone can be used for sample generation, which provides a training-free alternative to standard diffusion models; (ii) When there is no appropriate way to enumerate eigenfunctions, the capacity of OISM is diminished, but it is still capable of providing a "good guess" alongside a neural network score estimator. We think that our work serves as a good starting point that can elicit future work in score matching informed by the underlying forward process. 
@@ -19,8 +17,6 @@ A notable direction for future work would be to alleviate the burden of enumerat
 
 _ZS:_ I think our current understanding is insufficient to suggest whether or not a PCA solution is superior beyond the computational aspect. I still think warm start is a good idea but I'm not sure how to include it in the answer to this question. $${\color{red}\text{MR. Would this work?}}$$ On the other hand, the available setting easily allows to warm-start the DDPM neural score estimator, by pre-training it to learn the OISM eigenfunctions-based estimator. We believe this is also a direction worth exploring, by implementing the practical precautions in [2]
 
-[2] Ash, J and Adams, RP. On warm-starting neural network training. Advances in Neural Information Processing Systems. 2020, pp.3884-3894.
-
 >Considering the above weaknesses 1 and 2, the benefit of reformulating the ISM loss in Eq. (9) might remain unclear. Providing more detailed future directions and potentials of the proposed viewpoint would further enhance the significance of the paper.
 
 Thank you for this suggestion, and we agree that we should outline promising future directions of our approach. $${\color{red}\text{some of which are detailed throughout this rebuttal.}}$$
@@ -28,3 +24,8 @@ Thank you for this suggestion, and we agree that we should outline promising fut
 >While the paper presents quantitative results on 2D datasets, a quantitative comparison with DDPM on 2D datasets might be lacking. Including further quantitative results on 2D datasets would better highlight the effectiveness of the proposed method.
 
 _ZS_: experimental results pending
+
+[1] Zhou M, Chen T, Wang Z, Zheng H. Beta Diffusion. Advances in Neural Information Processing Systems. 2023 Dec 15;36:30070–95.
+
+[2] Ash, J and Adams, RP. On warm-starting neural network training. Advances in Neural Information Processing Systems. 2020, pp.3884-3894.
+
