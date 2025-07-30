@@ -43,4 +43,5 @@ We don't understand what "operator-informed approach in backward process" means 
  Please see our reply above, regarding scalability to higher-dimensional datasets. 
 
 [1] Bansal A, Borgnia E, Chu HM, Li JS, Kazemi H, Huang F, et al. Cold Diffusion: Inverting Arbitrary Image Transforms Without Noise. In: Thirty-seventh Conference on Neural Information Processing Systems. 2023.
+
 [2] Wang, Binxu, and John Vastola. 2024. “The Unreasonable Effectiveness of Gaussian Score Approximation for Diffusion Models and Its Applications.” _Transactions on Machine Learning Research_, July 8.
