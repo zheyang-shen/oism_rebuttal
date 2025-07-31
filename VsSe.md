@@ -20,23 +20,7 @@ We hope to address in future work the question of how the OISM score estimator r
 
 We agree that the question of how to leverage the OISM score function in a practical setting remains open, and that we should keep investigating the practical implications of our approach. We appreciate your keen insight regarding Hermite polynomials, namely in that they were chosen out of convenience, as OU process is the sole canonical option for Markov forward processes with a countable spectrum. The practical use of Hermite polynomial for OISM can be somewhat hindered by numerical instability, as expressing the product of 2 Hermite polynomials as a sum requires combinatorial numbers that can become numerically cumbersome.
 
-_ZS:_ I have given the reviewer a concession on the topic of Hermite polynomial as a tool of convenience. Is it ok?
-
-Here we would like to highlight a few instances that can be of practical significance. Even though what we illustrate below might not be directly applicable to practitioners, they remain valuable insights produced by the theoretical basis of our paper. 
-
-_ZS_: I think it would be good appearance-wise to come up with a few points, but I find it quite hard to pinpoint what the reviewer might be looking for. I think the insight about choosing forward process is helpful. 
-
-- **The importance of selecting forward process based on their spectral properties**. We have considered three types of Markov noising processes in the paper: Ornstein-Uhlenbeck process (VP), Brownian motion (VE), and truncated Brownian motion. These processes differ greatly in their spectral properties, with the first and the last having countable spectra, the second having an uncountable spectrum. Therefore, the first and the last are more amenable to the search for informative eigenfunctions under the OISM framework. Moreover, when compared to the Hermite polynomials given by OU, the trigonometric eigenfunctions of the truncated BM enjoy better stability thanks to their boundedness and straightforward interaction, so much so that trigonometric features are able to single-handedly recover low-dimensional target distributions. However, despite its simplicity, truncated BM, selected by its appealing spectral property, remains a new concept as a forward process to the literature on denoising diffusion models.
-  
-- **The interplay between classical statistical methods**
-
-_ZS_: If I would want to make a 2nd point on practical implications, it might be something about "classical statistical tools such as James-Stein estimator and kernel smoothing are still relevant in studying generative models", but it seems quite pedantic. We can say something on the topic of how rudimentary score estimates, no matter how simple, are still useful in accelerating the training of DMs. 
-
-_MR:_  I think this comment of the reviewer is also following our 'Limitations and potential' paragraph in section 5 in the paper, where we say 'straightforward to implement'. I also think that the reviewer is following the 'Significance' question of the NeurIPS guidance: Are the results impactful for the community? Are others (researchers or practitioners) likely to use the ideas or build on them? Does the submission address a difficult task in a better way than previous work? Does it advance our understanding/knowledge on the topic in a demonstrable way? Does it provide unique data, unique conclusions about existing data, or a unique theoretical or experimental approach?
-_MR_: I would slightly reformulate the reply as follows (I brought here some of the points that we made to MPpd, in 'Significance'). 
-
-
-Indeed, we envisage continuing to investigate the practical implications of the OISM approach and how to leverage the OISM score function in practical settings within denosing diffusion models, as follows. 
+We envisage continuing to investigate the practical implications of the OISM approach and how to leverage the OISM score function in practical settings within denosing diffusion models, as follows. 
 
 - **The importance of selecting forward process based on their spectral properties**. 
 We have considered three types of Markov noising processes in the paper: Ornstein-Uhlenbeck process (VP), Brownian motion (VE), and truncated Brownian motion. These processes differ greatly in their spectral properties, with the first and the last having countable spectra, the second having an uncountable spectrum. Therefore, the first and the last are more amenable to the search for informative eigenfunctions under the OISM framework. We appreciate the reviewer's insight regarding Hermite polynomials, namely that they were chosen out of convenience, as OU process is the sole canonical option for Markov forward processes with a countable spectrum. The practical use of Hermite polynomial for OISM can be somewhat hindered by numerical instability, as expressing the product of 2 Hermite polynomials as a sum requires combinatorial numbers that can become numerically cumbersome. When compared to the Hermite polynomials given by OU, the trigonometric eigenfunctions of the truncated BM enjoy better stability thanks to their boundedness and straightforward interaction, so much so that trigonometric features are able to single-handedly recover low-dimensional target distributions. However, despite its simplicity, truncated BM, selected by its appealing spectral property, remains a new concept as a forward process to the literature on denoising diffusion models.
@@ -48,12 +32,6 @@ The traditional implicit score matching loss of [3] is computationally expensive
 The parametric formulation of the score obtained by optimising a quadratic form makes explicit spatial and temporal dependencies exhibited by the score for different noising levels. This tangible characterisation could, for example, prove relevant to practitioners for establishing novel weighting schemes for the loss function used in neural score estimators, and its value at time zero could be used to obtain a warm start for the neural estimator. In the context of denoising diffusion models, the OISM framework facilitates the development of data-adapted Markov forward-noising processes and the selection of (sub-)optimal sets of basis functions. We speculate that, when combined with adequate regularisation (e.g. in the form of shrinkage), this new OISM score, combined with neural score learning, could  enjoy both fast convergence rates and an adequate level of generalisation.
 
 Finally, the OISM framework is amenable to extensions to tasks  that use the spectrum of a Markov process beyond generative models, including, but not limited to, the parametric variational inference approach of EigenVI [2].  
-
-
-
-
-
-
 
 > **Experiment.** Compared to the theory part, the experimental part is very weak and requires substantial improvements on breath and depth. I strongly recommend adding strong benchmarks and score matching methods such as VP and VE SDEs [Song et al., 2020b], and other DDPMs. I also suggest testing higher dimensional images to see if the proposed operator-informed approach does not suffer from dimensionality.
 
