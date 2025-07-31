@@ -38,12 +38,11 @@ Despite the altered forward process, the neural network score estimator is still
 
 We observe that despite the limited capacity provided by **OISM (L)**, there is significant benefit in incorporating a mildly informative score estimate as part of a neural score estimate. For example, **NN (pre-trained)** consistently outperforms **NN-only**, and the only difference is that the first 1k iterations are spent on minimizing the squared distance between OISM (L). We think this helps to illustrate that while the DSM objective function achieves the purpose of score matching after enough iterations, it is somewhat ineffective in learning the rough shape of the data distribution, and significant speedups can be achieved by a slight alteration of the training process. 
 
-|              | OISM (H) | OISM (L) | OISM (L) + NN | NN (pre-trained) | NN-oly |
-| ------------ | -------- | -------- | ------------- | ---------------- | ------ |
-| 2spirals     | -2.262   | -3.150   | -2.337        | -2.289           | -2.375 |
-| 8gaussians   | -2.036   | -2.575   |               |                  |        |
-| pinwheel     |          |          |               |                  |        |
-| checkerboard |          |          |               |                  |        |
+|            | OISM (H) | OISM (L) | OISM (L) + NN | NN (pre-trained) | NN-only |
+| ---------- | -------- | -------- | ------------- | ---------------- | ------- |
+| 2spirals   | -2.262   | -3.150   | -2.337        | -2.289           | -2.375  |
+| 8gaussians | -2.036   | -2.581   | -2.169        | -2.195           | -2.132  |
+| pinwheel   | -1.576   | -1.792   | -1.686        | -1.829           | -1.842  |
 
 
 [1] Zhou M, Chen T, Wang Z, Zheng H. Beta Diffusion. Advances in Neural Information Processing Systems. 2023 Dec 15;36:30070–95.
