@@ -2,7 +2,7 @@
 
 >It would be intriguing to present some theoretical convergence results for applying the proposed OISM method to generative models and compare it with standard score matching, which could provide further understanding on the efficiency of simultaneously estimating the scores of all marginal distributions.
 
-It is indeed an important and open question that we hope to address in future work about how the OISM score estimator relates to the ground truth score function. We think Figure 1 partially illustrates this fact, especially in the column labelled OISM I, where the OISM parameters $\alpha_t$ are computed using ground truth expectations (and the approximation stems solely from the use of a finite basis function). 
+We thank the reviewer for their comments. It is indeed an important and open question that we hope to address in future work about how the OISM score estimator relates to the ground truth score function. We think Figure 1 partially illustrates this fact, especially in the column labelled OISM I, where the OISM parameters $\alpha_t$ are computed using ground truth expectations (and the approximation stems solely from the use of a finite basis function). 
 
 The lines drawn for the ground truth score function in Figure 1 is not entirely accurate, mainly in that since we are considering a Gaussian mixture density on a constrained domain with the truncated Brownian motion as the forward process, the underlying density function becomes an infinite sum. If we revise the figure to showcase this new ground truth score function, we can see that the OISM I column matches exactly with the ground truth score. We plan to revise Figure 1 for this purpose, and use this figure as a preliminary answer on the theoretical convergence of OISM. 
 
