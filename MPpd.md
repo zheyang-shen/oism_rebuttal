@@ -16,10 +16,6 @@ We find it challenging to address this comment without more constructive guidanc
 Finally, the OISM framework is amenable to extensions to tasks  that use the spectrum of a Markov process beyond generative models, including, but not limited to, the parametric variational inference approach of EigenVI [2].  
 
 
-
-Significance: Are the results impactful for the community? Are others (researchers or practitioners) likely to use the ideas or build on them? Does the submission address a difficult task in a better way than previous work? Does it advance our understanding/knowledge on the topic in a demonstrable way? Does it provide unique data, unique conclusions about existing data, or a unique theoretical or experimental approach?
-
-
 > Originality: Much of what is described in the bulk of the paper is rather unoriginal, although the method itself to my knowledge has not been considered in the literature.
 
 Given that the reviewer is also not aware of existing comparable methodology in the literature, we hope that this originality aspect, combined with our reply to the previous comment, could lead them to reconsider the overall opinion about the significance and impactfulness of the work. 
