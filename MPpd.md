@@ -28,7 +28,8 @@ Given that the reviewer is also not aware of existing comparable methodology in 
 
 We hope to have addressed this question in the points above, but would be happy to engage in a meaningful and constructive correspondence with the reviewer, should this not be the case. 
 
-[1] Hyvärinen, A. and Dayan, P., 2005. Estimation of non-normalized statistical models by score matching. Journal of Machine Learning Research, 6(4).
+[1] Hyvärinen, A., 2005. Estimation of non-normalized statistical models by score matching. Journal of Machine Learning Research, 6(4).
+
 [2] Cai D, Modi C, Margossian CC, Gower RM, Blei DM, Saul LK. EigenVI: score-based variational inference with orthogonal function expansions. Advances in Neural Information Processing Systems. 2024 Dec 16;37:132691–721.
 
 
