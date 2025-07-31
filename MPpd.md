@@ -18,7 +18,7 @@ Finally, the OISM framework is amenable to extensions to tasks  that use the spe
 
 > Originality: Much of what is described in the bulk of the paper is rather unoriginal, although the method itself to my knowledge has not been considered in the literature.
 
-Given that the reviewer is also not aware of existing comparable methodology in the literature, we hope that this originality aspect, combined with our reply to the previous comment, could lead them to reconsider the overall opinion about the significance and impactfulness of the work. 
+Given that the reviewer is also not aware of existing comparable methodology in the literature, we hope that this originality aspect, supported by our reply to the previous comment, could lead them to reconsider the overall opinion about the significance and impactfulness of the work. 
 
 > The main question is whether the authors could justify why their methodology is meaningful, especially in the high-dimensional setting
 
