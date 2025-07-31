@@ -8,7 +8,7 @@ The last part of the 'Quality' comment overlaps with the 'Clarity' comment. We g
 
 > Clarity: From a writing perspective, I am confused why the paper spends so much time in Sections 1-2, and much of Section 3.1 on what are relatively standard facts. I would suggest that the authors condense these sections.
 
-We agree that Sections 1 and 2.1 contain revision material, for which we had initially aimed to be self-contained for a reader who might not be an expert in the spectral theory of Markov processes. We welcome the suggestion to reformat the paper, moving some of the better-known concepts to the appendix, or making it more compact using tables. This will give more room to enhance the novel methodology presented in Sections 2.2 and 3, and the description of the additional quantitative results obtained for the 2D dataset and for the ImageNet dataset. $${\color{red}\text{MR Add a reference to the tables.}}$$ 
+We agree that Sections 1 and 2.1 contain revision material, for which we had initially aimed to be self-contained for a reader who might not be an expert in the spectral theory of Markov processes. We welcome the suggestion to reformat the paper, moving some of the better-known concepts to the appendix, or making it more compact using tables. This will give more room to enhance the novel methodology presented in Sections 2.2 and 3, and the description of the additional quantitative results obtained for the 2D dataset and for the ImageNet dataset. You can find further experimental result in our rebuttal to reviewers u3iK and SM6H.
 
 > Significance: As described above, I am unconvinced of the significance of the method proposed.
 
