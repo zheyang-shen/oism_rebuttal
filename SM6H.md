@@ -2,11 +2,9 @@
 
 >It would be intriguing to present some theoretical convergence results for applying the proposed OISM method to generative models and compare it with standard score matching, which could provide further understanding on the efficiency of simultaneously estimating the scores of all marginal distributions.
 
-_ZS_: What should we say about convergence? I don't have a concrete line of thought on what to do precisely on proving convergence, even though it seems plausible.
+It is indeed an important and open question that we hope to address in future work about how the OISM score estimator relates to the ground truth score function. I think Figure 1 partially illustrates this fact, especially in the column labeled OISM I, where OISM parameters came from the ground truth expectations. 
 
-One way of addressing this would be to point at the "OISM I" section of Figure 1. As we use an increasing number of eigenfunctions, the OISM score estimate approaches the ground truth score functions (the "ground truth score" in Figure 1 is not precisely accurate, as it has infinite support, but in principle it should have finite support on the interval; if we use Jacobi's theta function to calculate the score function, it bends towards the boundary in the exact same way as the OISM score function). 
-
-We could point out the slight inaccuracy in Figure 1 and suggest that the OISM score estimator seems to converge when given accurate expectations, and the scenario of empirically assessed expectations requires further study. 
+The lines drawn for the ground truth score function in Figure 1 is not entirely accurate, mainly in that since we are considering a Gaussian mixture density on a constrained domain with the truncated Brownian motion as the forward process, the underlying density function becomes an infinite sum. If we revise the figure to showcase this new ground truth score function, we can see that the OISM I column matches exactly with the ground truth score. We plan to revise Figure 1 for this purpose, and use this figure as a preliminary answer on the theoretical convergence of OISM. 
 
  >The dimensions of the current experiments are not large. It would be beneficial to test the effectiveness of spectral decomposition on higher dimensional problems like higher-resolution image generation.
 
