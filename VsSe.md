@@ -21,6 +21,7 @@ We hope to address in future work the question of how the OISM score estimator r
 We agree that the question of how to leverage the OISM score function in a practical setting remains open, and that we should keep investigating the practical implications of our approach. We appreciate your keen insight regarding Hermite polynomials, namely in that they were chosen out of convenience, as OU process is the sole canonical option for Markov forward processes with a countable spectrum. The practical use of Hermite polynomial for OISM can be somewhat hindered by numerical instability, as expressing the product of 2 Hermite polynomials as a sum requires combinatorial numbers that can become numerically cumbersome.
 
 _ZS:_ I have given the reviewer a concession on the topic of Hermite polynomial as a tool of convenience. Is it ok?
+
 _MR:_ This is ok, I think this comment of the reviewer is also following our 'Limitations and potential' paragraph in section 5. 
 
 Here we would like to highlight a few instances that can be of practical significance. Even though what we illustrate below might not be directly applicable to practitioners, they remain valuable insights produced by the theoretical basis of our paper. 
