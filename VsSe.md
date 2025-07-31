@@ -61,9 +61,9 @@ The authors have justified in the answer above the choices of the forward proces
 
 > Is there any benefits for learning with forward processes? Can operator-informed approach implemented with backward process?
 
-We do not understand what "learning with forward processes" entails specifically -- if the purpose is to find a forward process beyond OU and BM considered by the paper, but still with a tractable spectrum, then there will be a clear practical benefit in choosing a forward process suitable to the data distribution at hand. A linear time-invariant SDE has a tractable spectrum (Appendix A) as a forward process, and it is possible to vary the parameter of the forward process while maintaining tractability. 
+We do not understand what "learning with forward processes" entails specifically -- if the purpose is to find a forward process beyond OU and BM considered by the paper, but still with a tractable spectrum, then there will be a clear practical benefit in choosing a forward process suitable to the data distribution at hand. A linear time-invariant SDE has a tractable spectrum (Appendix A) as a forward process, and it is possible to vary the parameter of the forward process while maintaining tractability. If this was not the reviewer's concern, could the reviewer please clarify the question?
 
-We don't understand what "operator-informed approach in backward process" means -- would you like to clarify?
+We don't understand what "operator-informed approach in backward process" means -- could the reviewer please  clarify?
 
 > Can OISM scalable to generate large 512x512 images?
 
